@@ -1,0 +1,20 @@
+static int ch12_mode=0;
+static double ch12_length;
+static double ch12_oil_consum;
+static unsigned int next;
+static int ch12_E9_ARR=100;
+static int ch12_E9_COL=20;
+
+void set_mode(int mode_input);
+void get_info();
+void show_info();
+void set_mode_E3(int mode_input, int mode_last);
+void get_info_E3(int mode, double *length, double *oil_consum);
+void show_info_E3(int mode, double *length, double *oil_consum);
+int ch12_E4_call_count();
+int myrand();
+int myseed(int input);
+int ch12_E5_mysort(int *st, int n);
+int ch12_E7_roll_dice(int side);
+int *make_array(int elem, int val);
+void show_array(const int ar[],int n);
